@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <title>Agendamento por Telefone</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Agendamento por Telefone</h2>
+      <p>Preencha o formulário abaixo para agendar sua consulta por telefone.</p>
+    </div>
+
+    <form id="form" class="form" onsubmit="submitForm(event)">
+      <div class="form-control">
+        <label for="name">Seu Nome</label>
+        <input type="text" id="name" placeholder="Digite seu nome..." required>
+      </div>
+
+      <div class="form-control">
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" placeholder="Digite seu telefone..." required>
+      </div>
+
+      <div class="form-control">
+        <label for="date">Data de Agendamento</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <div class="form-control">
+        <label for="time">Horário Preferido</label>
+        <input type="time" id="time" required>
+      </div>
+
+      <button type="submit">Agendar</button>
+    </form>
+
+    <div id="success-message" class="hidden">
+      <p>O seu agendamento foi realizado com sucesso!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
